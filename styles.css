@@ -1,0 +1,398 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* navbar  */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 150px;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    padding-left: 30px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+li strong {
+    padding-top: 10px;
+    padding-right: 20px;
+}
+li a {
+    padding-top: 15px;
+    color: hsl(219, 9%, 45%);
+    display: block;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: black;
+}
+
+hr {
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-right: 150px;
+    color: hsl(220, 14%, 75%);
+}
+
+.nav {
+    display: block;
+    padding: 10px;
+}
+
+.icon-cart {
+    float: right;
+}
+
+.icon-avatar {
+    float: right;
+    padding-left: 0px;
+    margin-left: 20px;
+    margin-right: 200px;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+.icon-avatar:hover {
+    border: 2px solid hsl(26, 100%, 55%);
+}
+a.a-icon-avatar {
+    padding-top: 0px;
+}
+.img-avatar {
+    object-fit: contain;
+    height: 45px;
+}
+
+/* main body section */
+.container {
+    margin-top: 75px;
+    margin-left: 250px;
+    margin-right: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+/* product image section */
+.product {
+    display: inline-block;
+    width: 400px;
+}
+
+.details {
+    display: inline-block;
+}
+
+.preview{
+    height: 350px;
+    border-radius: 12px;
+    display: block;
+}
+
+.preview:hover {
+    cursor: pointer;
+}
+
+.thumbnail{
+    height: 70px;
+    border-radius: 12px;
+    margin-top: 25px;
+    margin-right: 18px;
+    border: 3px solid white;
+}
+
+.thumbnail:hover {
+    cursor: pointer;
+    filter: opacity(50%);
+}
+
+.thumbnail-clicked {
+    filter: opacity(30%);
+    border-color: hsl(26, 100%, 55%);
+}
+
+/* product details section */
+h1 {
+    font-size: 2.5rem;
+}
+
+.details p{
+    color: hsl(219, 9%, 45%);
+}
+
+/* pricing */
+.price .cost {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+
+.price span {
+    margin-left: 10px;
+    padding: 3px 5px;
+    font-size: 0.80rem;
+    font-weight: bold;
+    color: hsl(26, 100%, 55%);
+    background-color: hsl(25, 100%, 94%);
+    border-radius: 4px;
+}
+
+.price p {
+    margin-top: 5px;
+    text-decoration: line-through;
+    font-size: 0.85rem;
+    color: hsl(220, 14%, 75%);
+}
+
+/* item quantity increment and decrement buttons */
+.itemselector {
+    display: inline-block;
+    background-color: hsl(223, 64%, 98%);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.itemselector .button {
+    display: inline-block;
+    padding: 8px 10px;
+    padding-bottom: 8px;
+    color: hsl(26, 100%, 55%);
+    font-size: 1.4rem;
+}
+
+.itemselector .button:hover {
+    cursor: pointer;
+    color: hsl(25, 98%, 84%);
+}
+
+.itemselector .items-count {
+    display: inline-block;
+    padding: 8px 15px;
+    padding-bottom: 8px;
+    font-size: 0.8rem;
+}
+
+/* add to cart button */
+.addtocart {
+    height: 45px;
+    width: 250px;
+    border-style: none;
+    border-radius: 12px;
+    margin-left: 15px;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    font-weight: bold;
+}
+
+.addtocart:hover {
+    cursor: pointer;
+    background-color: hsl(25, 90%, 76%);
+}
+.addtocart img {
+    padding-right: 15px;
+    height: 15px;
+    width: 16px;
+    filter: brightness(0) invert(1);
+}
+
+/* items notification on cart */
+li div {
+    position: relative;
+}
+
+.notifi {
+    display: inline-block;
+    height: 10px;
+    width: 13px;
+    border-radius: 5px;
+    background-color: hsl(26, 100%, 55%);
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    color: white;
+    font-size: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* dialog box of cart */
+.dialog {
+    position: absolute;
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+    top: 70px;
+    right: 200px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px gray;
+    visibility: hidden;
+}
+
+.dialog h6 {
+    margin-bottom: 0px;
+    margin-left: 20px;
+    font-size: 0.80rem;
+    margin-top: 20px;
+}
+.dialog .dialog-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.dialog hr {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.dialog .dialog-details {
+    display: inline-block;
+    color: hsl(219, 9%, 45%);
+    font-size: 0.85rem;
+    margin-left: 10px;
+    position: relative;
+    bottom: 5px;
+}
+
+.dialog span {
+    font-weight: bold;
+    color: black;
+}
+
+.dialog .delete-icon {
+    float: right;
+    height: 12px;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.dialog .checkout {
+    height: 40px;
+    width: 260px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hidden {
+    visibility: visible;
+}
+
+.dialog .dialog-details p {
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+.empty-dialog {
+    text-align: center;
+    margin-top: 20%;
+    font-weight: bold;
+    color: hsl(219, 9%, 45%);
+    display: none;
+}
+
+
+/* lightBox styling */
+
+.lightbox {
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100vh;
+    display: none;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+} 
+
+.item-preview {
+    padding-top: 100px;
+    text-align: center;
+    position: relative;
+}
+
+.item-preview .image img{
+    height: 400px;
+    border-radius: 12px;
+}
+
+.item-preview .thumbnail-image {
+    height: 70px;
+    border-radius: 12px;
+    margin: 30px 10px;
+    box-sizing: border-box;
+}
+
+.item-preview .thumbnail-image:hover {
+    border: 2px solid hsl(26, 98%, 51%);
+    filter: opacity(50%);
+    cursor: pointer;
+}
+
+.clicked{
+    border: 2px solid hsl(26, 98%, 51%);
+    filter: opacity(30%);
+}
+
+.item-preview .slide {
+    background-color: white;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-weight: bold;
+    position: absolute;
+    font-size: 1.5rem;
+}
+
+.item-preview .pushright {
+    top: 45%;
+    right: 35%;
+}
+
+.item-preview .pushleft{
+    top: 45%;
+    left: 35%;
+}
+
+.item-preview .slide span {
+    position: relative;
+    top: 20%;
+}
+
+.item-preview .close img{
+    height: 20px;
+    width: 20px;
+    margin-left: 25%;
+    filter: brightness(0) invert(1);
+}
+
+.item-preview .close img:hover {
+    color: hsl(26, 100%, 55%);
+    cursor: pointer;
+}
+
+.item-preview .slide span:hover{
+    color: hsl(26, 100%, 55%);
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel = "stylesheet" href = "styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>E-commerce product page</title>
+
+  
+</head>
+<body>
+  
+  <!-- lightbox -->
+  <div class="lightbox">
+    <div class="item-preview">
+        <div class="image">
+            <div class="close"><img src="images/icon-close.svg" alt=""></div>
+            <img class = "product" src="images/image-product-1.jpg" alt="">
+            <div class="pushright slide"><span>></span></div>
+            <div class="pushleft slide"><span><</span></div>
+        </div>
+        <div class="thumbnails">
+            <img id="one-lightbox" src="images/image-product-1-thumbnail.jpg" alt="" class="thumbnail-image">
+            <img id="two-lightbox" src="images/image-product-2-thumbnail.jpg" alt="" class="thumbnail-image">
+            <img id="three-lightbox" src="images/image-product-3-thumbnail.jpg" alt="" class="thumbnail-image">
+            <img id="four-lightbox" src="images/image-product-4-thumbnail.jpg" alt="" class="thumbnail-image">
+        </div>
+    </div>
+  </div>
+
+  <div class="nav">
+    <ul>
+      <li><strong style="font-size: 2rem;">sneakers</strong></li>
+      <li><a href="#collection">Collections</a></li>
+      <li><a href="#men">Men</a></li>
+      <li><a href="#women">Women</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="icon-avatar"><a class="a-icon-avatar" href="#user"><img class="img-avatar" src="images/image-avatar.png" alt=""></a></li>
+      <li class = "icon-cart"><a  href="#cart">
+        <div>
+          <img  class ="img-cart" src="images/icon-cart.svg" alt="">
+        </div>
+      </a></li>
+    </ul>
+  </div>
+  <hr> 
+  <div class="dialog">
+    <h6>Cart</h6>
+    <hr>
+    <p class = "empty-dialog">Your cart is empty.</p>
+    <div class="item">
+      <img class="dialog-img" src="images/image-product-1-thumbnail.jpg" alt="">
+      <div class="dialog-details">
+        <p>Fall Limited Edition Sneakers<br>$125.00 x 5 <span>$550</span></p>
+        <img class = "delete-icon" src="images/icon-delete.svg" alt="">
+      </div>
+      <button class="checkout">Checkout</button>
+    </div> 
+  </div>
+
+  <div class="container">
+    <div class="product">
+      <img class = "preview" src="images/image-product-1.jpg" alt="">
+      <img id="one" class = "thumbnail thumbnail-clicked" src="images/image-product-1-thumbnail.jpg" alt="">
+      <img id="two" class = "thumbnail" src="images/image-product-2-thumbnail.jpg" alt="">
+      <img id="three" class = "thumbnail" src="images/image-product-3-thumbnail.jpg" alt="">
+      <img id="four" class = "thumbnail" src="images/image-product-4-thumbnail.jpg" alt="">
+    </div>
+    <div class="details">
+      <p><span style="color: orange;">Sneaker Company</span></p>
+      <h1>Fall Limited Edition Sneakers</h1>
+    
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they'll withstand everything the weather can offer.
+      </p>
+      <div class="price">
+        <h3 class="cost">$125.00</h3>
+        <span>50%</span>
+        <p>$250.00</p>
+      </div>
+      <div class="itemselector">
+        <div class="button">-</div>
+        <div class="items-count">0</div>
+        <div class="button">+</div>
+      </div>
+
+      <button class="addtocart"><img src="images/icon-cart.svg" alt="">Add to cart</button>
+    </div>
+  </div>
+
+<script src="index.js"></script>
+<script src="lightbox.js"></script>
+</body>
+</html> 
